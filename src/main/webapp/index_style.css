@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* Custom styles */
+    body {
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f8f9fa;
+      background-color: #2093b0;
+    }
+    .container {
+      max-width: 400px;
+      margin-top: 50px;
+      position: absolute;
+      right: 20px;
+      top: 40%;
+      transform: translateY(-50%);
+      background-color: #333; /* Changed container background color */
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      opacity: 0.95;
+    }
+    .sign-prompt {
+      text-align: center; /* Aligning the text in the center */
+      margin-bottom: 20px; /* Adding some margin at the bottom */
+      color: #fff; /* Changing text color to white */
+    }
+    .nav-tabs {
+      margin-top: 5px; /* Adjusting the margin to align with the text */
+    }
+    .nav-link.active {
+      background-color: #007bff; /* Background color of the selected tab */
+      color: #fff; /* Text color of the selected tab */
+    }
+    .form-group {
+      margin-bottom: 15px; /* Adjusting margin between form groups */
+    }
+    .form-group label {
+      color: #fff; /* Changing label text color to white */
+    }
+    .form-control {
+      background-color: #444; /* Changing input background color */
+      color: #fff; /* Changing input text color to white */
+      border: 1px solid #666; /* Changing input border color */
+    }
+    .form-control:focus {
+      background-color: #555; /* Changing input background color when focused */
+      color: #fff; /* Changing input text color when focused */
+      border-color: #888; /* Changing input border color when focused */
+    }
+    .btn-primary {
+      background-color: #007bff; /* Changing button background color */
+      border-color: #007bff; /* Changing button border color */
+    }
+    .btn-primary:hover {
+      background-color: #0056b3; /* Changing button background color on hover */
+      border-color: #0056b3; /* Changing button border color on hover */
+    }
+    .waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+.wavetag{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  /* This part is important for centering */
+  display: flex;
+  justify-content: flex-start; /* Horizontally aligns items to the start */
+  align-items: center; /* Vertically aligns items to the center */
+}
+
+.typing-demo {
+  width: 19ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bolder;
+  margin-top: -250px; /* Adjust as needed to move it up */
+  margin-left: 130px; /* Adjust as needed to move it right */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.wrapper2 {
+  display: flex;
+  align-items: center; /* Vertically aligns items to the center */
+}
+
+.agree-term,
+.label-agree-term {
+  display: inline-block; /* Ensures the checkbox and label appear on the same line */
+  vertical-align: middle; /* Aligns the checkbox and label vertically */
+}
+
+.label-agree-term p {
+  margin: 0; /* Remove default margin from the paragraph */
+  color: white;
+}
+.agree-term{
+	margin-right: 5px;
+	margin-top: -2px;
+}

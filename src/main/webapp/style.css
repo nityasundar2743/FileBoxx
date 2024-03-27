@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.inputbar{
+ 	outline: none;
+}
+        .form-inline {
+            display: flex;
+  			flex-flow: row wrap;
+  			align-items: center;
+  			font-size: 15px;
+        }
+.butn {
+    color: #2093b0;
+    border-radius: 15px;
+    border: 1px solid #2093b0;
+    height: 125px;
+    width: 104px;
+    background-color: #333; /* Dark background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.butn:hover {
+    background-color: #0077aa;
+    color: white;
+}
+
+        #myimage {
+		    height: 50px;
+		    width: 50px;
+		}
+		nav{
+			display:flex;
+			
+		}
+		
+		#home-img{
+			height:20px;
+		}
+		#folder-container{
+			display:flex;
+			flex-wrap: wrap;
+            gap: 10px; /* Adjust this value to control spacing between folders */
+            margin-top: 20px;
+            padding-top: 50px;
+		}
+		.hidden{
+			display: none;
+		}
+		.footer-form{
+		display:flex;
+		align-items:center;
+		}
+		body{
+			width:100vw;
+			background-color: #333;
+		}
+		#path-txt{
+			color: white;
+			font-size: 20px;
+			padding-top: 15px;
+		}
+		#back-button{
+			margin-top: 10px;
+		}
+		#back-and-path{
+		display:flex;
+		}
+		.select-files{
+			color:white;
+		}
+.modal-content{
+	background-color: #333;
+	color:white;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
